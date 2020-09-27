@@ -11,8 +11,16 @@ function currentTime() {
   sec = updateTime(sec);
 
   hour = hour == 0 ? 12 : hour > 12 ? hour - 12 : hour;
+
   document.getElementById("clock").innerText =
-    hour + " : " + min + " : " + sec; /* adding time to the div */
+    hour +
+    " : " +
+    min +
+    " : " +
+    sec +
+    " " +
+    midday; /* adding time to the div */
+
   var t = setTimeout(function () {
     currentTime();
   }, 1000); /* setting timer */
