@@ -19,3 +19,10 @@ body {
   padding-bottom: 4rem;
 }
 /* Media Query */
+@media (max-width: 480px) {
+  #clock {
+    font-size: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
